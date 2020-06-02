@@ -1,0 +1,54 @@
+---
+title: "Campaña COVID-19, Pastoral Juvenil P.Cristo de Emaús"
+author: "by Daniel Ugalde (diugalde@uc.cl)"
+date: "02-06-2020"
+output: html_document
+---
+
+[Ver en Google Maps](https://bit.ly/ayuda_familias)
+
+```{r global options, echo = FALSE, force = TRUE, message = FALSE, warning = FALSE}
+library(knitr)
+library(tidyverse)
+library(sf)
+library(mapview)
+library(readxl)
+library(magrittr)
+```
+
+
+
+```{r, echo=F, force = T, message= F, warning = F, collapse=TRUE}
+myurl <- "https://docs.google.com/spreadsheets/d/e/2PACX-1vQawLKRruyLNHg1LSMjfxt0siwuj9ng_wxQlDM-a3aWUD1Z4LiVIP9E8lfrvAywQQUaluxVGFMlZhx5/pub?gid=1371277324&single=true&output=csv"
+wti <- read_csv(url(myurl))
+data_1 <- wti
+
+data_1 %<>%
+  mutate(lon_x = as.double(paste0(str_sub(LONGITUD, start = 1, end = 3), ".",
+                                  str_sub(LONGITUD, start = 4))),
+         lat_y = as.double(paste0(str_sub(LATITUD, start = 1, end = 3), ".",
+                                  str_sub(LATITUD, start = 4))))
+
+familias_ayudadas <- st_as_sf(data_1,
+                      coords = c("lon_x", "lat_y"),
+                      crs = 4326)
+```
+
+
+
+```{r, echo=TRUE, collapse=TRUE}
+mapview(familias_ayudadas)
+
+
+```
+
+```{r, echo=FALSE, warning=FALSE}
+familias_apoyadas_comuna <- familias_ayudadas %>%
+  group_by(COMUNA, AYUDA_ENTREGADA) %>% 
+  summarise(familias_ayudadas = n()) %>%
+  ungroup()
+familias_apoyadas_comuna
+```
+
+
+
