@@ -38,17 +38,12 @@ familias_ayudadas <- st_as_sf(data_1,
 
 ```{r, echo=TRUE, collapse=TRUE}
 mapview(familias_ayudadas)
-
+count(familias_ayudadas)
 
 ```
 
-```{r, echo=FALSE, warning=FALSE}
-familias_apoyadas_comuna <- familias_ayudadas %>%
-  group_by(COMUNA, AYUDA_ENTREGADA) %>% 
-  summarise(familias_ayudadas = n()) %>%
-  ungroup()
-familias_apoyadas_comuna
-```
+## Hasta el momento hemos ayudado a 71 familias de en promedio 3 integrantes.
+
 
 
 
