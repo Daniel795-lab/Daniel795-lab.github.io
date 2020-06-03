@@ -29,9 +29,12 @@ data_1 %<>%
          lat_y = as.double(paste0(str_sub(LATITUD, start = 1, end = 3), ".",
                                   str_sub(LATITUD, start = 4))))
 
-familias_ayudadas <- st_as_sf(data_1,
+familias_apoyadas <- st_as_sf(data_1,
                       coords = c("lon_x", "lat_y"),
                       crs = 4326)
+familias_ayudadas <- familias_apoyadas %>% 
+  select(ID, COMUNA, INTEGRANTES_GRUPO_FAMILIAR, NACIONALIDAD, AYUDA_ENTREGADA, 
+         FECHA_AYUDA, RECIBIO_AYUDA)
 ```
 
 
