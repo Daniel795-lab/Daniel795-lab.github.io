@@ -33,11 +33,14 @@ data_1 %<>%
 familias_apoyadas <- st_as_sf(data_1,
                       coords = c("lon_x", "lat_y"),
                       crs = 4326)
+
+```
+
+```{r, echo=FALSE, include=FALSE}
 familias_ayudadas <- familias_apoyadas %>% 
   select(ID, COMUNA, INTEGRANTES_GRUPO_FAMILIAR, NACIONALIDAD, AYUDA_ENTREGADA, 
          FECHA_AYUDA, RECIBIO_AYUDA)
 ```
-
 
 
 ```{r, echo=FALSE, collapse=TRUE}
