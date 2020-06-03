@@ -14,6 +14,7 @@ library(sf)
 library(mapview)
 library(readxl)
 library(magrittr)
+library(printr)
 ```
 
 
@@ -44,8 +45,14 @@ mapview(familias_ayudadas)
 
 ```
 
+```{r echo=FALSE}
+attach(familias_ayudadas)
+table(COMUNA, AYUDA_ENTREGADA)
+```
 
-## Hasta el momento hemos ayudado a **73** familias de en promedio 3 integrantes.
+
+
+## Como se aprecia en la tabla anterior, hemos ayudado a **73** familias (en promedio de 3 integrantes) en cuatro comunas.
 
 
 
