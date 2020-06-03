@@ -1,10 +1,12 @@
 ---
-title: "Campaña Justicia y dignidad, pastoral juvenil P. Cristo de Emaús"
+title: "Campaña Justicia y dignidad"
 ---
 
-Hello, Website!
+Pastoral juvenil P. Cristo de Emaús
 
-## ¡Bienvenidos a esta campaña que busca conseguir un poco de "Justicia y dignidad" a nuestros hermanos y hermanas que estan sufriendo los estragos de la pandemia!
+# ¡Bienvenidos a esta campaña que busca conseguir un poco de "Justicia y dignidad" a nuestros hermanos y hermanas que estan sufriendo los estragos de la pandemia!
+
+---
 
 ### Te invitamos a compartir este afiche para que juntos podamos ayudar a más familias!
 

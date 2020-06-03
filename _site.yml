@@ -1,13 +1,13 @@
-name: "my-website"
+name: "Granitos de Mostaza"
 output_dir: "."
 navbar:
-  title: "My Website"
+  title: "Granitos de Mostaza"
   left:
-    - text: "Home"
+    - text: "INICIO"
       href: index.html
-    - text: "Mapa"
+    - text: "MAPA INTERACTIVO"
       href: mapa.html
-    - text: "About"
+    - text: "QUIENES SOMOS?"
       href: about.html
 output:
   html_document:
