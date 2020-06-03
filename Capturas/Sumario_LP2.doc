@@ -1,0 +1,7 @@
+    COMUNA          NACIONALIDAD       Personas_beneficiadas
+ Length:5           Length:5           Min.   :  3.0        
+ Class :character   Class :character   1st Qu.:  4.0        
+ Mode  :character   Mode  :character   Median :  5.0        
+                                       Mean   : 29.4        
+                                       3rd Qu.: 19.0        
+                                       Max.   :116.0        
