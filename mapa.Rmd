@@ -45,7 +45,7 @@ mapview(familias_ayudadas)
 
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE, force = T, message= F, warning = F, collapse=TRUE}
 attach(familias_ayudadas)
 table(COMUNA, AYUDA_ENTREGADA)
 ```
