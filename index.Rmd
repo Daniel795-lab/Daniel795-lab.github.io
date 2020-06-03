@@ -1,7 +1,11 @@
 ---
-title: "My Website"
+title: "Campaña Justicia y dignidad, pastoral juvenil P. Cristo de Emaús"
 ---
 
 Hello, Website!
 
-## Hola a todos, bienvenidos a mi página.
+## ¡Bienvenidos a esta campaña que busca conseguir un poco de "Justicia y dignidad" a nuestros hermanos y hermanas que estan sufriendo los estragos de la pandemia!
+
+### Te invitamos a compartir este afiche para que juntos podamos ayudar a más familias!
+
+![afiche campaña](Capturas/flyer.jpeg)
