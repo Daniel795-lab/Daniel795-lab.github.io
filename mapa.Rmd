@@ -1,7 +1,7 @@
 ---
 title: "Campaña COVID-19, Pastoral Juvenil P.Cristo de Emaús"
 author: "by Daniel Ugalde (diugalde@uc.cl)"
-date: "Actualizado al 03-06-2020"
+date: "Actualizado al 04-06-2020"
 output: html_document
 ---
 
@@ -59,7 +59,7 @@ y <- as.integer(x)
 ```
 
 
-## Como se aprecia en la tabla anterior, hemos ayudado a **`r y`** familias (en promedio de 3 integrantes) en cuatro comunas.
+## Como se aprecia en la tabla anterior, hemos ayudado a ***`r y`*** familias (en promedio de 3 integrantes) en cuatro comunas.
 
 
 
