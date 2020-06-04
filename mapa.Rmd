@@ -59,7 +59,7 @@ y <- as.integer(x)
 ```
 
 
-## Como se aprecia en la tabla anterior, hemos ayudado a ***`r y`*** familias (en promedio de 3 integrantes) en cuatro comunas.
+## Como se aprecia en la tabla anterior, hemos ayudado a **`r y`** familias (en promedio de 3 integrantes) en cuatro comunas.
 
 
 
