@@ -5,10 +5,10 @@ navbar:
   left:
     - text: "INICIO"
       href: index.html
-    - text: "MAPA INTERACTIVO"
-      href: mapa.html
     - text: "QUIENES SOMOS?"
       href: about.html
+    - text: "MAPA INTERACTIVO"
+      href: mapa.html
 output:
   html_document:
     theme: united
