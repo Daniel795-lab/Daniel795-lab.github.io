@@ -16,7 +16,6 @@ library(readxl)
 library(magrittr)
 library(printr)
 setwd("C:/Users/Daniel/Desktop/CAMP_SOLID/Daniel795-lab.github.io")
-getwd() #espacio de trabajo actualizado
 ```
 
 
