@@ -10,4 +10,4 @@ Pastoral juvenil P. Cristo de Emaús
 
 ### Para comenzar te invitamos a compartir este afiche para que juntos podamos ayudar a más familias!
 
-![afiche campaña](Capturas/flyer.jpeg)
+![](Capturas/flyer.jpeg)
