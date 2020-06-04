@@ -36,24 +36,24 @@ familias_apoyadas <- st_as_sf(data_1,
 
 ```
 
-```{r, echo=FALSE, include=FALSE}
+```{r, echo=FALSE, include=FALSE, message= F, warning = F}
 familias_ayudadas <- familias_apoyadas %>% 
   select(ID, COMUNA, INTEGRANTES_GRUPO_FAMILIAR, NACIONALIDAD, AYUDA_ENTREGADA, 
          FECHA_AYUDA, RECIBIO_AYUDA)
 ```
 
 
-```{r, echo=FALSE, collapse=TRUE}
+```{r, echo=FALSE, collapse=TRUE, message= F, warning = F}
 mapview(familias_ayudadas)
 
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE, message= F, warning = F}
 attach(familias_ayudadas)
 table(COMUNA, AYUDA_ENTREGADA)
 ```
 
-```{r, include=FALSE}
+```{r, include=FALSE, message= F, warning = F}
 x=count(wti)
 y <- as.integer(x)
 ```
