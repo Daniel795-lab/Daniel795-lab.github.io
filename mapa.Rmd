@@ -1,7 +1,7 @@
 ---
 title: "Campaña COVID-19, Pastoral Juvenil P.Cristo de Emaús"
 author: "by Daniel Ugalde (diugalde@uc.cl)"
-date: "Actualizado al 04-06-2020"
+date: "Actualizado al 06-06-2020"
 output: html_document
 ---
 
