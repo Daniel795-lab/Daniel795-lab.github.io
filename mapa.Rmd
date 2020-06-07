@@ -44,7 +44,7 @@ familias_ayudadas <- familias_apoyadas %>%
 ```
 
 
-```{r, echo=FALSE, collapse=TRUE, message= F, warning = F}
+```{r echo=FALSE, collapse=TRUE, message= F, warning = F, fig.align='center'}
 mapview(familias_ayudadas, zcol = "AYUDA_ENTREGADA", legend = T, layer.name = c("Ayuda entregada a familias"))
 
 ```
