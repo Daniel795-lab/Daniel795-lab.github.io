@@ -1,7 +1,7 @@
 ---
 title: "Campaña COVID-19, Pastoral Juvenil P.Cristo de Emaús"
 author: "by Daniel Ugalde (diugalde@uc.cl)"
-date: "Actualizado al 06-06-2020"
+date: "Actualizado al 20-06-2020"
 output: html_document
 ---
 
@@ -40,18 +40,18 @@ familias_apoyadas <- st_as_sf(data_1,
 ```{r, echo=FALSE, include=FALSE, message= F, warning = F}
 familias_ayudadas <- familias_apoyadas %>% 
   select(ID, COMUNA, INTEGRANTES_GRUPO_FAMILIAR, NACIONALIDAD, AYUDA_ENTREGADA, 
-         FECHA_AYUDA, RECIBIO_AYUDA)
+         FECHA_AYUDA, AYUDA_ENTREGADA2, FECHA_AYUDA2)
 ```
 
 
 ```{r echo=FALSE, collapse=TRUE, message= F, warning = F, fig.align='center'}
-mapview(familias_ayudadas, zcol = "AYUDA_ENTREGADA", legend = T, layer.name = c("Ayuda entregada a familias"))
+mapview(familias_ayudadas, zcol = "AYUDA_ENTREGADA2", legend = T, layer.name = c("Ayuda entregada a familias"))
 
 ```
 
 ```{r echo=FALSE, message= F, warning = F}
 attach(familias_ayudadas)
-table(COMUNA, AYUDA_ENTREGADA)
+table(COMUNA, AYUDA_ENTREGADA2)
 ```
 
 ```{r, include=FALSE, message= F, warning = F}
@@ -60,7 +60,7 @@ y <- as.integer(x)
 ```
 
 
-## Como se aprecia en la tabla anterior, hemos ayudado a **`r y`** familias (en promedio de 3 integrantes) en cuatro comunas.
+## Como se aprecia en la tabla anterior, hemos ayudado a **`r y`** familias (en promedio de 4 integrantes) alrededor de cinco comunas.
 
 
 

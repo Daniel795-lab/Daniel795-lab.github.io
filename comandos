@@ -1,0 +1,13 @@
+CONSOLE
+
+rmarkdown::render_site(encoding = "UTF-8")
+
+TERMINAL
+
+git add.
+
+git add -A
+
+git commit -m "Modificacion21"
+
+git push origin master
