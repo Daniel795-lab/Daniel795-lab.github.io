@@ -58,10 +58,11 @@ table(COMUNA, AYUDA_ENTREGADA2)
 ```{r, include=FALSE, message= F, warning = F}
 x=count(wti)
 y <- as.integer(x)
+h <-unique(data_1$COMUNA) %>% length %>% print()
 ```
 
 
-## Como se aprecia en la tabla anterior, hemos ayudado a **`r y`** familias (en promedio de 4 integrantes) alrededor de cinco comunas.
+## Como se aprecia en la tabla anterior, hemos ayudado a **`r y`** familias (en promedio de 4 integrantes) alrededor de **`r h`** comunas.
 
 
 ```{r include=FALSE, echo=F, message= F, warning = F}
