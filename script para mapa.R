@@ -1,6 +1,5 @@
 #1. Carga de paquetes y WD ----
 rm(list = ls())
-
 library(tidyverse)
 library(readxl)
 library(sf)
@@ -66,8 +65,9 @@ select_not_NA <- data_1 %>%
 summary(select_not_NA$INTEGRANTES_GRUPO_FAMILIAR)
 #Familias ayudadas por comuna
 datos_por_comuna <- data_1 %>% 
-  count(COMUNA) %>% 
+  count(COMUNA) %>% rename(count = n) %>% 
   view()
+datos_por_comuna2 <- data_1 %>% group_by(COMUNA, NACIONALIDAD) %>% summarise(familias_beneficiadas = n()) %>% View()
 unique(data_1$COMUNA)
 #Familias ayudadas por COMUNA y NACIONALIDAD
 datos_nacionalidad <- data_1 %>% 
