@@ -68,8 +68,7 @@ knitr::opts_chunk$set(fig.align="center")
 <center>![](Capturas/Pastoral_Juvenil_ollacomun26mayo.jpeg)</center>
 <center>![](Capturas/once_comunitaria.mp4){width=640 height=352}</center>
 <center>![](Capturas/preparacionolla.jpeg)</center>
-<center>![](Capturas/7julio_olla.mp4){width=640 height=352}</center>
 
 <br>
 
-## Ayúdanos a combatir el virus de la pobreza!
+# Ayúdanos a combatir el virus de la pobreza!
