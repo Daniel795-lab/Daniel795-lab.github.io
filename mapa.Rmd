@@ -1,11 +1,21 @@
 ---
-title: "Campaña COVID-19, Pastoral Juvenil P.Cristo de Emaús"
+title: "Campaña COVID-19, Pastoral Juvenil P. Cristo de Emaús"
 author: "by Daniel Ugalde (diugalde@uc.cl)"
-date: "Fecha de actualización: **`r Sys.Date()`**"
+date: "Fecha de actualización: **`r Sys.Date()+1`**"
 output: html_document
 ---
 
+<style>
+body {
+text-align: justify}
+</style>
+
+____
+
+# 1. Mapa interactivo
+
 [Ver en Google Maps](https://bit.ly/ayuda_familias)
+
 
 ```{r global options, echo = FALSE, force = TRUE, message = FALSE, warning = FALSE}
 library(knitr)
@@ -17,6 +27,8 @@ library(magrittr)
 library(printr)
 library(lubridate)
 library(plotly)
+library(kableExtra)
+library(highcharter)
 setwd("C:/Users/Daniel/Desktop/CAMP_SOLID/Daniel795-lab.github.io")
 ```
 
@@ -42,17 +54,26 @@ familias_apoyadas <- st_as_sf(data_1,
 ```{r, echo=FALSE, include=FALSE, message= F, warning = F}
 familias_ayudadas <- familias_apoyadas %>% 
   select(ID, COMUNA, INTEGRANTES_GRUPO_FAMILIAR, NACIONALIDAD, AYUDA_ENTREGADA, 
-         FECHA_AYUDA, AYUDA_ENTREGADA2, FECHA_AYUDA2)
+         FECHA_AYUDA, AYUDA_ENTREGADA2, FECHA_AYUDA2, AYUDA_ENTREGADA3, FECHA_AYUDA3, AYUDA_ACUMULADA, DATE)
 ```
 
 ```{r echo=FALSE, collapse=TRUE, message= F, warning = F, fig.align='center'}
-mapview(familias_ayudadas, zcol = "AYUDA_ENTREGADA2", legend = T, layer.name = c("Ayuda entregada a familias"))
+mapview(familias_ayudadas, zcol = "AYUDA_ACUMULADA", legend = T, layer.name = c("Ayuda entregada a familias"))
 
 ```
+<br>
+
+# 2. Estadísticas
+
+## 2.1. Familias apoyadas según comuna y tipo de ayuda
 
 ```{r echo=FALSE, message= F, warning = F}
 attach(familias_ayudadas)
-table(COMUNA, AYUDA_ENTREGADA2)
+b <- table(COMUNA, AYUDA_ACUMULADA)
+
+kable(b, align = "l") %>%
+  kable_styling(full_width = T, bootstrap_options = "hover") %>%
+  row_spec(1:nrow(b), align = "l")
 ```
 
 ```{r, include=FALSE, message= F, warning = F}
@@ -62,7 +83,23 @@ h <-unique(data_1$COMUNA) %>% length %>% print()
 ```
 
 
-## Como se aprecia en la tabla anterior, hemos ayudado a **`r y`** familias (en promedio de 4 integrantes) alrededor de **`r h`** comunas.
+> Como se aprecia en la tabla anterior, hasta el momento hemos ayudado a **`r y`** familias (en promedio de 4 integrantes) alrededor de **`r h`** comunas.
+
+<br>
+
+## 2.2. Personas que han recibido ayuda en Lo Prado según nacionalidad
+
+```{r echo=FALSE, message= F, warning = F}
+c <- familias_apoyadas %>%
+  group_by(COMUNA = "Lo Prado", NACIONALIDAD) %>% 
+  summarise(Personas = sum(INTEGRANTES_GRUPO_FAMILIAR, na.rm= T)) %>%
+  ungroup() %>% 
+  st_drop_geometry()
+
+kable(c, align = "l") %>%
+  kable_styling(full_width = F, bootstrap_options = "hover") %>%
+  row_spec(1:nrow(b))
+```
 
 
 ```{r include=FALSE, echo=F, message= F, warning = F}
@@ -80,7 +117,7 @@ class(familias_apoyadas$date)
     xlab(NULL) +
     ylab("Número de familias \n") +
     labs(title = "Evolución de la ayuda por fecha",
-         subtitle = paste0("Fecha actualización: ", Sys.Date()-1)) +
+         subtitle = paste0("Fecha actualización: ", Sys.Date())) +
     #scale_x_date(date_breaks = "3 days") +
     scale_y_continuous(breaks = seq(0, 200, 20))+
     theme_minimal() +
@@ -88,6 +125,9 @@ class(familias_apoyadas$date)
 
 ```
 
+<br>
+
+## 3. Gráfico dinámico
 ____
 ```{r echo=FALSE, collapse=TRUE, message= F, warning = F}
 ggplotly(a)

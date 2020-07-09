@@ -1,6 +1,12 @@
 ---
 title: "¿Quiénes somos? de dónde surge la idea?"
 ---
+
+<style>
+body {
+text-align: justify}
+</style>
+
 ### Somos un grupo de jóvenes cristianos que anhelan incansablemente la justicia social soñada por Jesús de Nazaret hace dos mil años.
 
 *Misión: servir a las familias del sector poniente de la capital mediante un plan de trabajo integral, con el fin de combatir el virus de la pobreza que sufren nuestros hermanos y hermanas.*
@@ -11,19 +17,59 @@ A tráves de la entrega de mercadería, organización de ollas comunes, desayuno
 
 ---
 
-Síguenos en redes sociales
+# Síguenos en redes sociales
 
 ## [Facebook](https://www.facebook.com/Parroquia-Cristo-de-Ema%C3%BAs-90180038266)
 
 ## [Instagram](https://instagram.com/granitos_de_mostazas?igshid=18tbl1w6vdv02)
 
-<center>![](Capturas/nina.mp4){width=640 height=400}</center>
+```{r echo = FALSE, force = TRUE, message = FALSE, warning = FALSE}
+knitr::opts_chunk$set(fig.align="center")
+```
+<br>
 
-<center>![](Capturas/ollacomun_26mayo.jpeg)</center>
-<center>![](Capturas/fidel.jpeg)</center>
-<center>![](Capturas/Don_Patricio.jpeg)</center>
-<center>![](Capturas/entrega_miguel.jpeg)</center>
+# 1. Afiches 
+
+<center>![](Capturas/ollacomun9julio.jpeg)</center>
+<center>![](Capturas/pijamaton.jpeg)</center>
 <center>![](Capturas/once_comunitaria2.jpg)</center>
-<center>![](Capturas/once_comunitaria.mp4){width=640 height=352}</center>
+<center>![](Capturas/mascota.jpg)</center>
+<center>![](Capturas/centros_acopio.jpg)</center>
+<center>![](Capturas/porotada.jpg)</center>
 
-# Ayúdanos a combatir el virus de la pobreza!
+<br>
+
+# 2. Agradecimientos
+
+<center>![](Capturas/nina.mp4){width=640 height=400}</center>
+<center>![](Capturas/Don_Patricio.jpeg)</center>
+<center>![](Capturas/agradecimiento1.jpeg)</center>
+<center>![](Capturas/agradecimiento2.jpeg)</center>
+
+<br>
+
+# 3. Entrega de mercadería
+
+<center>![](Capturas/entrega_Fidel.mp4){width=640 height=352}</center>
+<center>![](Capturas/cajas_tercamp.jpeg)</center>
+<center>![](Capturas/entrega_miguel.jpeg)</center>
+<center>![](Capturas/6_julio.mp4){width=640 height=352}</center>
+<center>![](Capturas/entrega_5julio.jpeg)</center>
+<center>![](Capturas/entrega_bryan.jpeg)</center>
+<center>![](Capturas/entrega_cami.jpeg)</center>
+<center>![](Capturas/entrega_damaris.jpg)</center>
+
+<br>
+
+# 3. Ollas comunes y onces comunitarias
+
+<center>![](Capturas/ollas.jpg)</center>
+<center>![](Capturas/olla_comun_2junio.mp4){width=640 height=352}</center>
+<center>![](Capturas/Pastoral_Juvenil_ollacomun26mayo.jpeg)</center>
+<center>![](Capturas/once_comunitaria.mp4){width=640 height=352}</center>
+<center>![](Capturas/preparacionolla.jpeg)</center>
+<center>![](Capturas/7julio_olla.mp4){width=640 height=352}</center>
+
+<br>
+
+## Ayúdanos a combatir el virus de la pobreza!

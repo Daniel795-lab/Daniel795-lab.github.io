@@ -3,14 +3,21 @@ title: "Campaña Justicia y Dignidad\n en tiempos de pandemia"
 ---
 Pastoral juvenil P. Cristo de Emaús
 
+<style>
+body {
+text-align: justify}
+</style>
+
 # ¡Bienvenidos a esta campaña que busca conseguir un poco de **Justicia y Dignidad** a nuestros hermanos y hermanas que están sufriendo los estragos de la pandemia!
 
 ---
 
 ### Para comenzar te invitamos a compartir el afiche de la tercera campaña solidaria para que juntos sigamos ayudando a más familias!
 
-![](Capturas/tercera_campana.jpeg)
+![](Capturas/cuarta_campana.jpeg)
 ---
+
+<br>
 
 # ¿Por qué "Granitos de Mostaza"?
 

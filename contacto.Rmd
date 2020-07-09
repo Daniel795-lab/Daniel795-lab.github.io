@@ -1,17 +1,20 @@
 ---
 title: "¿Te gustaría unirte a nosotros?"
 ---
+
+<style>
+body {
+text-align: justify}
+</style>
+
 Escríbenos a través de nuestras redes sociales o al correo granitosdemostazas@gmail.com
 
 *«Señor, ¿cuándo te vimos hambriento o sediento, forastero o desnudo, enfermo o preso, y no te hemos socorrido?”
 y Él les responderá: “Les aseguro que cada vez que no lo hicieron con el más pequeño de mis hermanos, tampoco lo hicieron conmigo” (Mt 25, 44-45).»*
 
 
-<center>![](Capturas/entrega_Fidel.mp4){width=640 height=352}</center>
-<center>![](Capturas/olla_comun_2junio.mp4){width=640 height=352}</center>
-
-
-
+<center>![](Capturas/entrega_samy.mp4){width=640 height=352}</center>
+<center>![](Capturas/ultraproteccion.jpeg)</center>
 <center>![](Capturas/maxima_proteccion.jpeg)</center>
 
 
